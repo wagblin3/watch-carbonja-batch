@@ -1,0 +1,26 @@
+<configuration scan="true">
+	<springProperty name="app-name"
+		source="spring.application.name" />
+	<springProperty name="app-version"
+		source="application.version" />
+
+	<property name="patternPlainText"
+		value="%date{yyyy-MM-dd HH:mm:ss.SSSXXX} | %-5level | %X{IP} | %X{HostName} | ${app-name} | ${app-version} | %X{traceId:-} | %X{spanId:-} | %X{UserId} | %X{Marker} | %c{36} | %msg%n" />
+
+	<!-- Appender to console for local use only -->
+    <appender name="console"
+        class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${patternPlainText}</pattern>
+        </encoder>
+    </appender>
+	
+	<root level="DEBUG">
+		<appender-ref ref="console" />
+	</root>
+
+	<contextListener
+		class="ch.qos.logback.classic.jul.LevelChangePropagator">
+		<resetJUL>true</resetJUL>
+	</contextListener>
+</configuration>

@@ -1,0 +1,61 @@
+logging:
+   config: classpath:logback-local.xml
+   level:
+      root: INFO
+      org.springframework: INFO
+      org.springframework.batch: TRACE
+      org.apache.http: ERROR
+      com.bnpparibas.dsibddf.ap81579.greeneco: INFO
+      org.springframework.retry: TRACE
+
+spring:
+#   key: value
+#   data:
+#      mongodb:
+#         uri: mongodb://localhost:27017/mongo-example
+   batch:
+      job:
+         enabled: false
+
+cos:
+   endpoint: http://127.0.0.1:8001
+   location: eu-fr2
+   #   iam:
+   #      endpoint: https://iam-global.svc.paas.echonet:4212/identity/token
+   timeout: 500
+   archive:
+      expiration:
+         enabled: false
+      prefix: archive
+
+apikey: HNdrds3YZzURlKWpmNVPlI5kQySEVHwmXeICaB1ptNWv
+resource_instance_id: "crn:v1:bluemix:public:cloud-object-storage:global:a/f009f93f4ee348a3970e48f649cb6f5f:327f7d6b-e9fc-4392-ac90-12c0f1c2f2ed::"
+cos_hmac_keys_access_key_id:
+cos_hmac_keys_secret_access_key:
+
+#bucket name
+application:
+   bucket-name : carbonja-bucket
+
+greeneco:
+   apiurlone: "https://guu84124.live.dynatrace.com"
+   apitokenone: "dt0c01.XJ6TKSA3W5WBPWHP7UC2ECXR.RBOFB3CJCWCKOOQFRO2MOZFAUL6NICVP7JZCELQIP73JJYXHUTWLE7UBHRU4ADCI"
+   apiurltwo:
+   apitokentwo:
+   from: "-1d"
+   to: "now"
+   name: "watch1"
+   mzone:
+      - "AppSec: Unguard"
+      - "Cloud: AWS"
+      - "Cloud: Azure"
+      - "Cloud: Google"
+      - "Cloud: VMware"
+      - "EasyTrade"
+      - "EasyTravel Angular"
+      - "HipsterShopLogs"
+      - "Tech: Log enrichment"
+      - "Tech: Mainframe"
+      - "Tech: OpenTelemetry"
+      - "Tech: SAP"
+   mztwo:

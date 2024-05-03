@@ -1,0 +1,4 @@
+logging:
+   config: classpath:logback-cloud.xml
+
+# All technicals parameters (urls, datasources, etc) must be define in helm's charts environment files

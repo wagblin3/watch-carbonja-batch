@@ -1,0 +1,1 @@
+[{"entityId":"CLOUD_APPLICATION_NAMESPACE-2E858F63FDF7306D","type":"CLOUD_APPLICATION_NAMESPACE","displayName":"easytrade","firstSeenTms":1662456249226,"toRelationships":{"isClusterOfNamespace":[{"id":"KUBERNETES_CLUSTER-B4A001031F545EE3","type":"KUBERNETES_CLUSTER"}]}}]

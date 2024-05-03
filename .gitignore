@@ -1,0 +1,89 @@
+
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+# Intellij
+.idea
+*.iml
+*.iws
+*.ipr
+*.ids
+*.orig
+*.prefs
+
+# Eclipse
+#.classpath
+#.project
+#.factorypath
+/**/.settings/
+
+## Packages
+*.egg
+*.egg-info
+dist
+build
+eggs
+parts
+bin
+var
+sdist
+deb_dist
+develop-eggs
+target
+venv
+.cache
+.sonar
+.oracle_jre_usage
+.scannerwork
+
+## Unit test / coverage reports
+.coveragerc
+.coverage
+.generated
+/.classpath
+/.project
+
+## SVN
+.svn*
+/root-ca/
+
+#DIVERS
+*.sav
+*.bak
+*.zip
+*.lck
+*.0
+/.metadata/
+.DS_Store
+/target
+/token_cfg
+
+#METRICS
+Metrics*
+/output*
+/tmp*

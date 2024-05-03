@@ -1,0 +1,11 @@
+# See https://docs.docker.com/engine/reference/builder/#dockerignore-file for more about ignoring files when building your docker.
+
+# template devops
+**Jenkinsfile
+**/pipeline
+
+# Git
+**.gitignore
+
+# Documentation
+**README.md

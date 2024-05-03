@@ -1,0 +1,8 @@
+
+# Add bootstrap custom configuration
+org.springframework.cloud.bootstrap.BootstrapConfiguration=\
+com.carbonwatch.carbonja.infrastructure.vault.config.VaultConfig,\
+com.carbonwatch.carbonja.infrastructure.vault.config.VaultCustomProperties,\
+com.carbonwatch.carbonja.infrastructure.vault.config.RetryVaultConfig,\
+com.carbonwatch.carbonja.infrastructure.vault.config.AOPConfig,\
+com.carbonwatch.carbonja.infrastructure.vault.config.RetryVaultAspect

@@ -1,0 +1,1 @@
+[{"entityId":"CLOUD_APPLICATION_NAMESPACE-908795E56153B60B","type":"CLOUD_APPLICATION_NAMESPACE","displayName":"prod","firstSeenTms":1642674564942,"toRelationships":{"isClusterOfNamespace":[{"id":"KUBERNETES_CLUSTER-B4A001031F545EE3","type":"KUBERNETES_CLUSTER"}]}}]

@@ -1,0 +1,28 @@
+spring:
+#   main:
+#      lazy-initialization: true
+   application:
+      name: CarbonjaBatch
+
+   batch:
+      jdbc:
+         initialize-schema: always
+#      job:
+#         name: ${spring.batch.job.names}
+
+# Logging Configurations
+application:
+   orgEntity: CARB
+   version: '@project.version@'
+   timezone: ${user.timezone}
+   apCode: AP00000
+   type: batch_logs
+
+logging:
+   level:
+      ROOT: INFO
+      org.springframework: INFO
+      com.carbonwatch.carbonja: INFO
+      org.springframework.boot.autoconfigure.batch.JobLauncherCommandLineRunner: DEBUG
+
+#config mapper jackson pour eviter les NULL

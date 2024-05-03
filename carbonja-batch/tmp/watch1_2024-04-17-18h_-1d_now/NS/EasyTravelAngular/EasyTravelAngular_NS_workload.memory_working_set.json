@@ -1,0 +1,1 @@
+{"totalCount":0,"resolution":"1h","result":[{"metricId":"builtin:kubernetes.workload.memory_working_set:splitBy(\"dt.entity.cloud_application_namespace\"):sum:names","dataPointCountRatio":0.0,"dimensionCountRatio":0.0,"data":[]}]}

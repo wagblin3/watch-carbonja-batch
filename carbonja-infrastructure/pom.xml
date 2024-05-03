@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.carbonwatch</groupId>
+		<artifactId>watch-carbonja-batch</artifactId>
+		<version>1.0</version>
+	</parent>
+
+	<artifactId>carbonja-infrastructure</artifactId>
+	<packaging>jar</packaging>
+	<name>${project.artifactId}</name>
+	<description>La couche Infrastructure abrite le code d'infrastructure (ex: envoi de mails, émission d'événements, interaction avec la base de données...).</description>
+
+	<dependencies>
+		<!-- Project dependencies -->
+		<dependency>
+            <groupId>com.carbonwatch</groupId>
+			<artifactId>carbonja-domain</artifactId>
+			<version>1.0</version>
+		</dependency>
+		
+		<!-- vault dependencies -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-bootstrap</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-vault-config</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.retry</groupId>
+			<artifactId>spring-retry</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-aop</artifactId>
+		</dependency>
+		
+<!--		&lt;!&ndash; Database &ndash;&gt;-->
+<!--		<dependency>-->
+<!--			<groupId>org.springframework.boot</groupId>-->
+<!--			<artifactId>spring-boot-starter-data-mongodb</artifactId>-->
+<!--		</dependency>-->
+<!--		&lt;!&ndash; Embedded MongoDB for unit test only &ndash;&gt;-->
+<!--		<dependency>-->
+<!--			<groupId>de.flapdoodle.embed</groupId>-->
+<!--			<artifactId>de.flapdoodle.embed.mongo.spring30x</artifactId>-->
+<!--			<version>4.6.2</version>-->
+<!--			<scope>test</scope>-->
+<!--		</dependency>-->
+ 
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-vault-config-databases</artifactId>
+		</dependency>
+
+		<!-- Logback encoder -->
+		<dependency>
+			<groupId>net.logstash.logback</groupId>
+			<artifactId>logstash-logback-encoder</artifactId>
+		</dependency>
+
+		<!-- HTTP CONSUMER  -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<!-- COS dependencies -->
+		<dependency>
+			<groupId>com.ibm.cos</groupId>
+			<artifactId>ibm-cos-java-sdk</artifactId>
+		</dependency>
+		
+	</dependencies>
+</project>

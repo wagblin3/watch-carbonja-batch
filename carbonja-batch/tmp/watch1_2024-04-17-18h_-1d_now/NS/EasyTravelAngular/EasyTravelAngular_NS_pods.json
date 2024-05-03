@@ -1,0 +1,1 @@
+{"totalCount":0,"resolution":"1h","result":[{"metricId":"builtin:kubernetes.pods:filter(and(or(not(existsKey(pod_status)),ne(pod_status,Terminating)),eq(pod_phase,Running))):splitBy(\"dt.entity.cloud_application_namespace\"):sum:names","dataPointCountRatio":0.0,"dimensionCountRatio":0.0,"data":[]}]}
