@@ -28,7 +28,7 @@ cos:
          enabled: false
       prefix: archive
 
-apikey: HNdrds3YZzURlKWpmNVPlI5kQySEVHwmXeICaB1ptNWv
+apikey: 
 resource_instance_id: "crn:v1:bluemix:public:cloud-object-storage:global:a/f009f93f4ee348a3970e48f649cb6f5f:327f7d6b-e9fc-4392-ac90-12c0f1c2f2ed::"
 cos_hmac_keys_access_key_id:
 cos_hmac_keys_secret_access_key:
@@ -39,7 +39,7 @@ application:
 
 greeneco:
    apiurlone: "https://guu84124.live.dynatrace.com"
-   apitokenone: "dt0c01.XJ6TKSA3W5WBPWHP7UC2ECXR.RBOFB3CJCWCKOOQFRO2MOZFAUL6NICVP7JZCELQIP73JJYXHUTWLE7UBHRU4ADCI"
+   apitokenone: ""
    apiurltwo:
    apitokentwo:
    from: "-1d"
